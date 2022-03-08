@@ -11,6 +11,10 @@ jobs:
   build-docker:
     runs-on: ubuntu-latest
     steps:
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=today::$(date +'%Y-%m-%d')"
+        
       - name: Checkout
         uses: actions/checkout@v2
 
