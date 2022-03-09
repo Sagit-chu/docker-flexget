@@ -35,7 +35,7 @@ if [ -n "${FG_WEBUI_PASSWD}" ]; then
 fi
 
 # permissions
-chown -R flexget:flexget /config
-chown -R flexget:flexget /downloads
+# chown -R flexget:flexget /config
+# chown -R flexget:flexget /downloads
 
 su flexget -c "/usr/local/bin/flexget -c /config/config.yml daemon start --autoreload-config"
