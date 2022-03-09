@@ -38,4 +38,5 @@ fi
 # chown -R flexget:flexget /config
 # chown -R flexget:flexget /downloads
 
-su flexget -c "/usr/local/bin/flexget -c /config/config.yml daemon start --autoreload-config"
+# su flexget -c "/usr/local/bin/flexget -c /config/config.yml daemon start --autoreload-config"
+/usr/local/bin/flexget -c /config/config.yml daemon start --autoreload-config
